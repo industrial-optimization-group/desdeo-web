@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+        {% endblock head %}
+<style>
+.optgroup-red {
+    color: #ed2024;
+}
+.land-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(24rem, 1fr));
+    align-items: stretch;
+}
+</style>
+</head>
+
+<body id="index" class="home">
+    <div class="mw8 center">
+        <header id="banner" class="body db flex justify-between items-end">
+            <a href="https://www.jyu.fi/"
+               style="width: 235px; height: 100px;
+                      background-image: url(/images/jyu-logo.png)"
+               class="contain"></a>
+            <h1 class="ma0 normal f5 sans-serif">
+                <a href="{{ SITEURL }}/" class="db no-underline black ph4">
+                    <div class="f3 mb1">DESDEO</div>
+                    <div class="tracked">
+                        <span class="optgroup-red">De</span>cision <span class="optgroup-red">S</span>upport for Computationally<br>
+                        <span class="optgroup-red">De</span>manding <span class="optgroup-red">O</span>ptimization Problems
+                    </div>
+                </a>
+            </h1>
+            <a href="http://mit.jyu.fi/optgroup/"
+               style="width: 235px; height: 100px;
+                      background-image: url(/images/optgroup-logo.svg)"
+               class="contain bg-right"></a>
+        </header><!-- /#banner -->
+        <nav class="bg-dark-blue sans-serif" id="menu"><ul>
+        {% for title, link in MENUITEMS %}
+            <li class="dib pv1 ph2"><a class="white no-underline{% if link[1:] == output_file.replace('index.html', '') %} b{% endif %}" href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        </ul></nav><!-- /#menu -->
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer class="serif">
+        Website source available
+        <a href="https://github.com/industrial-optimization-group/desdeo-web">on GitHub</a>.
+        Some images <a href="https://github.com/industrial-optimization-group/desdeo-web">used with attribution</a>.
+    </footer>
+</body>
+</html>
