@@ -10,3 +10,8 @@ This is the source code for the DESDEO project website. It is licensed under the
 * The [GitHub logo](https://github.com/logos) is used in accordance with its usage guidelines.
 * The [BinderHub logo](https://github.com/jupyterhub/binderhub) is used only to represent BinderHub, and thus qualifies as fair usage.
 * The University of Jyväskylä logo, and the University of Jyväskylä Optimization Group logo are the property of their respective owners.
+
+## Usage
+
+    pipenv install
+    pipenv run make ssh_upload
