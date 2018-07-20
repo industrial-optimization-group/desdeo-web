@@ -9,7 +9,7 @@ save_as: index.html
 
 <div class="land-grid">
   <a class="pa3 ma3 bg-near-white pointer dim db normal black no-underline"
-     href="https://mybinder.org/v2/gh/industrial-optimization-group/desdeo-vis/master?filepath=notebooks%2Fnimbus-river-pollution.ipynb">
+     href="https://mybinder.org/v2/gh/industrial-optimization-group/desdeo-vis/master?filepath=desdeo_notebooks%2Fnimbus-river-pollution.ipynb">
     <h3 class="ma0 f3 sans-serif tracked">Try</h3>
     <div style="height: 200px; background-image: url(images/try.svg)" class="mv2 db center contain bg-center"></div>
     <p class="lh-copy serif mb0">
