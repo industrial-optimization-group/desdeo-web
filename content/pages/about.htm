@@ -4,115 +4,144 @@
     <meta name="titlenodisplay" content="true" />
   </head>
 <body>
-<div class="mw7 center lh-title serif">
-<h2 class="sans-serif normal">
-  DESDEO: Decision Support for Computationally Demanding Optimization Problems
-</h2>
-<p>
-  DESDEO is an <em>open source framework for interactive
-  multiobjective optimization methods</em>. DESDEO contains implementations
-  of some interactive methods and modules that can be utilized to
-  implement further methods.
-</p>  
-<p>
-  In multiobjective optimization, several
-  conflicting objective functions are to be  optimized
-  simultaneously. Because of the conflicting nature of the objectives,
-  it is not possible to obtain individual optima of the objectives
-  simulatneously but one must trade-off between the
-  objectives. Interactive methods are iterative by nature where a
-  decision maker (who has substance knowledge) can direct the solution
-  process with one's preference information to find the most preferred
-  balance between the objectives. In interactive methods, the amount of
-  information to be considered at a time is limited and, thus, the
-  cognitive load set on the decision maker is not too
-  demanding. Furthermore, the decision maker learns about the
-  interdependencies among the objectives and also the feasibility of
-  one's preferences.
-</p>
-<p>
-  The mission of DESDEO is to increase awarenss of the benefits of
-  interactive methods make interactive methods more easily
-  available and applicable. Thanks to the open architecture, interactive
-  methods are easier to be 
-  utilized and further developed. The framework consists of
-  reusable components that can be utilized for 
-  implementing new methods or modifying the existing methods. The
-  framework is released under a 
-  permissive open source license.
-</p>
-<p>
-  The interactive methods currently implemented in DESDEO are the
-synchronous NIMBUS method
-</p>
-<ul>
-  <li>
-    Miettinen, K., Makela, M.M.,
-    <em>
-      Synchronous Approach in Interactive
-      Multiobjective Optimization</em>, European Journal of Operational Research,
-    170(3), 909-922, 2006<br>
-    DOI: <a href="https://dx.doi.org/10.1016/j.ejor.2004.07.052">https://dx.doi.org/10.1016/j.ejor.2004.07.052</a>
-  </li>
-</ul>
-<p>
-  and different
-  variants of the NAUTILUS family
-</p>
-<ul>
-  <li class="mv2">
-    Miettinen, K., Ruiz, F.,
-    <em>
-      NAUTILUS Framework: Towards
-      Trade-off-Free Interaction in Multiobjective Optimization</em>,
-    Journal of Business Economics, 86(1), 5-21, 2016
-    <br>
-    DOI: <a href="https://dx.doi.org/10.1007/s11573-015-0786-0">https://dx.doi.org/10.1007/s11573-015-0786-0</a> [<a href="https://jyx.jyu.fi/handle/123456789/51481">eprint</a>]
-  </li>
-  <li class="mv2">
-    Ruiz, A. B., Sindhya, K., Miettinen, K., Ruiz, F., Luque, M.,
-    <em>
-      E-NAUTILUS: A Decision Support System for Complex Multiobjective
-      Optimization Problems based on the NAUTILUS Method</em>, European Journal
-    of Operational Research, 246, 218-231, 2015 
-    <br>
-    DOI: <a href="https://dx.doi.org/10.1016/j.ejor.2004.07.052">https://dx.doi.org/10.1016/j.ejor.2004.07.052</a> [<a href="https://jyx.jyu.fi/handle/123456789/47459">eprint</a>]
-  </li>
-  <li class="mv2">
-    Miettinen, K., Podkopaev, D., Ruiz, F., Luque, M.,
-    <em>
-      A New
-      Preference Handling Technique for Interactive Multiobjective
-      Optimization without Trading-off</em>, Journal of Global Optimization,
-    63(4), 633-652, 2015 
-    <br>
-    DOI: <a href="https://dx.doi.org/10.1007/s10898-015-0301-8">https://dx.doi.org/10.1007/s10898-015-0301-8</a> [<a href="https://jyx.jyu.fi/handle/123456789/47797">eprint</a>]
-  </li>
-  <li class="mv2">
-    Miettinen, K., Eskelinen, P., Ruiz, F., Luque, M.,
-    <em>
-      NAUTILUS
-      Method: An Interactive Technique in Multiobjective Optimization
-      based on the Nadir Point</em>,
-    European Journal of Operational Research,
-    206(2), 426-434, 2010.
-    <br>
-    DOI: <a href="https://dx.doi.org/10.1016/j.ejor.2010.02.041">https://dx.doi.org/10.1016/j.ejor.2010.02.041</a>
-  </li>
-</ul>
-<p>
-  DESDEO is also a  research project funded by the Academy of Finland
-  (grant number 287496). The project lasts for four years (August 2015 -
-  August 2019).   The project aims to bring interactive methods closer
-  to researchers and practitioners world-wide, by providing them with
-  implementations of interactive optimization methods. The main results
-  of the 
-  DESDEO project are published as the DESDEO open source optimization framework
-  with implementations of the new methods 
-  developed during the project, of implementations of methods developed
-  earlier as well as connections to different 
-  simulation and problem modeling tools.
-</p>
+<div class="flex-ns justify-between center lh-title serif">
+<div class="w-50-ns pr3-ns">
+  <h2 class="sans-serif normal">
+    DESDEO: the open source framework
+  </h2>
+  <p>
+    DESDEO is an <em>open source framework for interactive
+    multiobjective optimization methods</em>. DESDEO contains implementations
+    of some interactive methods and modules that can be utilized to
+    implement further methods.
+  </p>  
+  <p>
+    In multiobjective optimization, several
+    conflicting objective functions are to be  optimized
+    simultaneously. Because of the conflicting nature of the objectives,
+    it is not possible to obtain individual optima of the objectives
+    simulatneously but one must trade-off between the
+    objectives. Interactive methods are iterative by nature where a
+    decision maker (who has substance knowledge) can direct the solution
+    process with one's preference information to find the most preferred
+    balance between the objectives. In interactive methods, the amount of
+    information to be considered at a time is limited and, thus, the
+    cognitive load set on the decision maker is not too
+    demanding. Furthermore, the decision maker learns about the
+    interdependencies among the objectives and also the feasibility of
+    one's preferences.
+  </p>
+  <p>
+    The mission of DESDEO is to increase awarenss of the benefits of
+    interactive methods make interactive methods more easily
+    available and applicable. Thanks to the open architecture, interactive
+    methods are easier to be 
+    utilized and further developed. The framework consists of
+    reusable components that can be utilized for 
+    implementing new methods or modifying the existing methods. The
+    framework is released under a 
+    permissive open source license.
+  </p>
+  <p>
+    The interactive methods currently implemented in DESDEO are the
+  synchronous NIMBUS method
+  </p>
+  <ul>
+    <li>
+      Miettinen, K., Makela, M.M.,
+      <em>
+        Synchronous Approach in Interactive
+        Multiobjective Optimization</em>, European Journal of Operational Research,
+      170(3), 909-922, 2006<br>
+      DOI: <a href="https://dx.doi.org/10.1016/j.ejor.2004.07.052">https://dx.doi.org/10.1016/j.ejor.2004.07.052</a>
+    </li>
+  </ul>
+  <p>
+    and different
+    variants of the NAUTILUS family
+  </p>
+  <ul>
+    <li class="mv2">
+      Miettinen, K., Ruiz, F.,
+      <em>
+        NAUTILUS Framework: Towards
+        Trade-off-Free Interaction in Multiobjective Optimization</em>,
+      Journal of Business Economics, 86(1), 5-21, 2016
+      <br>
+      DOI: <a href="https://dx.doi.org/10.1007/s11573-015-0786-0">https://dx.doi.org/10.1007/s11573-015-0786-0</a> [<a href="https://jyx.jyu.fi/handle/123456789/51481">eprint</a>]
+    </li>
+    <li class="mv2">
+      Ruiz, A. B., Sindhya, K., Miettinen, K., Ruiz, F., Luque, M.,
+      <em>
+        E-NAUTILUS: A Decision Support System for Complex Multiobjective
+        Optimization Problems based on the NAUTILUS Method</em>, European Journal
+      of Operational Research, 246, 218-231, 2015 
+      <br>
+      DOI: <a href="https://dx.doi.org/10.1016/j.ejor.2004.07.052">https://dx.doi.org/10.1016/j.ejor.2004.07.052</a> [<a href="https://jyx.jyu.fi/handle/123456789/47459">eprint</a>]
+    </li>
+    <li class="mv2">
+      Miettinen, K., Podkopaev, D., Ruiz, F., Luque, M.,
+      <em>
+        A New
+        Preference Handling Technique for Interactive Multiobjective
+        Optimization without Trading-off</em>, Journal of Global Optimization,
+      63(4), 633-652, 2015 
+      <br>
+      DOI: <a href="https://dx.doi.org/10.1007/s10898-015-0301-8">https://dx.doi.org/10.1007/s10898-015-0301-8</a> [<a href="https://jyx.jyu.fi/handle/123456789/47797">eprint</a>]
+    </li>
+    <li class="mv2">
+      Miettinen, K., Eskelinen, P., Ruiz, F., Luque, M.,
+      <em>
+        NAUTILUS
+        Method: An Interactive Technique in Multiobjective Optimization
+        based on the Nadir Point</em>,
+      European Journal of Operational Research,
+      206(2), 426-434, 2010.
+      <br>
+      DOI: <a href="https://dx.doi.org/10.1016/j.ejor.2010.02.041">https://dx.doi.org/10.1016/j.ejor.2010.02.041</a>
+    </li>
+  </ul>
+  </div>
+  <div class="w-50-ns pl3-ns">
+    <h2 class="sans-serif normal">DESDEO: the research project</h2>
+    <p>
+      DESDEO is an Academy of Finland funded research project (grant number
+      287496). The project lasts for four years (August 2015 - August 2019) and
+      aims to bring interactive methods closer to researchers and practitioners
+      world-wide, by providing them with implementations of interactive
+      optimization methods. The main results of the DESDEO project are
+      published as the DESDEO open source optimization framework with
+      implementations of the new methods developed during the project, of
+      implementations of methods developed earlier as well as connections to
+      different simulation and problem modeling tools.
+    </p>
+    <p>
+      Many of the publications produced as part of the project are available <a
+        href="http://www.mit.jyu.fi/optgroup/publications.html">on the
+        publications page of the University of Jyväskylä Optimization Group</a>
+      and <a href="http://users.jyu.fi/~miettine/publ.html">on the publications
+        page of Prof. Kaisa Miettinen</a>.
+    </p>
+    <p>
+      Some prototypes, developed using Matlab, of some of the techniques as part of
+      the project are available on GitHub. This includes:
+    </p>
+    <ul>
+      <li class="mv2">
+        <a href="https://github.com/industrial-optimization-group/ANOVA-MOP_Code">
+          ANOVAMOP: An interactive/non-interactive surrogate-based method for
+          solving high-dimensional computationally expensive multiobjective
+          optimization.
+        </a>
+      </li>
+      <li class="mv2">
+        <a href="https://github.com/industrial-optimization-group/SURROGATE-ASF-code">
+          SURROGATE-ASF: An interactive surrogate-based method for solving
+          computationally expensive multiobjective optimization problems.
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 </body>
 </html>
