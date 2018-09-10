@@ -43,3 +43,47 @@ save_as: index.html
     </p>
   </a>
 </div>
+
+<h2 class="normal sans-serif lh-title tc">
+  Who is DESDEO for?
+</h2>
+
+<div class="flex-ns">
+  <div class="pa3 ma3 bg-near-white flex-auto">
+    <h3 class="ma0 f3 sans-serif tracked">Students</h3>
+    <img class="db center mv2 h4" src="images/students.svg">
+    <div class="lh-copy serif">
+      <p>
+        Key advantages:
+      </p>
+      <ul>
+        <li>Built-in problems</li>
+        <li>Notebook based interface</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pa3 ma3 bg-near-white flex-auto">
+    <h3 class="ma0 f3 sans-serif tracked">Researchers</h3>
+    <img class="db center mv2 h4" src="images/science.svg">
+    <div class="lh-copy serif">
+      <p>
+        Key advantages:
+      </p>
+      <ul>
+        <li>Extensible architecture</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pa3 ma3 bg-near-white flex-auto">
+    <h3 class="ma0 f3 sans-serif tracked">Industry</h3>
+    <img class="db center mv2 h4" src="images/industry.svg">
+    <div class="lh-copy serif">
+      <p>
+        Key advantages:
+      </p>
+      <ul>
+        <li>Extensible architecture</li>
+      </ul>
+    </div>
+  </div>
+</div>
