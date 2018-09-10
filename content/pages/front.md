@@ -21,7 +21,9 @@ save_as: index.html
     <h3 class="ma0 f3 sans-serif tracked">Research</h3>
     <img class="db w4 center" src="images/science.svg">
     <p class="lh-copy serif mb0">
-      Read about the background of DESDEO, the academic project behind it, and the peer-reviewed publications describing it.
+      Read about the background of both the DESDEO framework, as well as the
+      academic project behind it. Review the peer-reviewed publications
+      describing DESDEO's foundations.
     </p>
   </a>
   <a class="pa3 ma3 bg-near-white pointer dim db normal black no-underline"
